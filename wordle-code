@@ -1,0 +1,38 @@
+#created during a 70 minute science period
+#code from tutorial by mbvissers
+from colorama import init, Fore, Back, Style
+import random
+init()
+
+loop = True
+word_list = ["penis", "idiot", "grade","cells", "flask", "phase", "scale", "avian", "paper", "balls", "brain", "chest", "doubt", "earth", "field", "heart", "noise", "plant", "sheep", "green", "snark", "shark", "vocab", "steam", "table", "write", "grant", "color"]
+while loop:
+    print(Back.WHITE + Fore.BLACK + "Start a new game? (yes/nah)" + Style.RESET_ALL)
+    command = input()
+    if command == "nah":
+        loop = False
+    elif command == "yes":
+        inner_loop = 0
+        word = random.choice(word_list)
+        print("Enter a word")
+        
+        while inner_loop < 6:
+          
+            attempt = input()
+          
+            #seaney send help
+            output = ""
+            for i in range(word.__len__()):
+              if attempt[i] == word[i]:
+                output = output + Back.GREEN + attempt[i] + Back.RESET
+              elif attempt[i] in word:
+                output = output + Back.YELLOW + attempt[i] + Back.RESET
+              else:
+                output = output + attempt[i] + Back.RESET
+            print(output)
+            if word == attempt:
+              print("Congrats Superstar!")
+              inner_loop = inner_loop + 6 #reset game
+
+            inner_loop = inner_loop + 1
+      
