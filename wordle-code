@@ -5,12 +5,13 @@ import random
 init()
 
 loop = True
-word_list = ["penis", "idiot", "grade","cells", "flask", "phase", "scale", "avian", "paper", "balls", "brain", "chest", "doubt", "earth", "field", "heart", "noise", "plant", "sheep", "green", "snark", "shark", "vocab", "steam", "table", "write", "grant", "color"]
+word_list = ["penis", "idiot", "grade","cells", "flask", "phase", "scale", "avian", "paper", "balls", "brain", "chest", "doubt", "earth", "field", "heart", "noise", "plant", "sheep", "green", "snark", "shark", "vocab", "steam", "table", "write", "grant", "color", "shell", "cause", "semen", "fluid", "moist"]
 while loop:
     print(Back.WHITE + Fore.BLACK + "Start a new game? (yes/nah)" + Style.RESET_ALL)
     command = input()
     if command == "nah":
-        loop = False
+        print("Are you sure?")
+        loop = True
     elif command == "yes":
         inner_loop = 0
         word = random.choice(word_list)
@@ -20,7 +21,6 @@ while loop:
           
             attempt = input()
           
-            #seaney send help
             output = ""
             for i in range(word.__len__()):
               if attempt[i] == word[i]:
@@ -32,7 +32,12 @@ while loop:
             print(output)
             if word == attempt:
               print("Congrats Superstar!")
-              inner_loop = inner_loop + 6 #reset game
-
+              inner_loop = inner_loop + 6 
+              
+            #I'm not sure here how to give this prompt after 6 failed attempts. Currently it shows up after one wrong attempt.  
+            if word != attempt:
+              print("Oh, good try! The answer was: " + word)
+           
+            #reset game
             inner_loop = inner_loop + 1
       
