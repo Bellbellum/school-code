@@ -23,7 +23,7 @@ while loop:
           
             output = ""
             for i in range(word.__len__()):
-              if attempt[i] == word[i]:
+              if attempt[i].lower() == word[i].lower():
                 output = output + Back.GREEN + attempt[i] + Back.RESET
               elif attempt[i] in word:
                 output = output + Back.YELLOW + attempt[i] + Back.RESET
