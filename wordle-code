@@ -5,7 +5,7 @@ import random
 init()
 
 loop = True
-word_list = ["penis", "idiot", "grade","cells", "flask", "phase", "scale", "avian", "paper", "balls", "brain", "chest", "doubt", "earth", "field", "heart", "noise", "plant", "sheep", "green", "snark", "shark", "vocab", "steam", "table", "write", "grant", "color", "shell", "cause", "semen", "fluid", "moist"]
+word_list = ["penis", "idiot", "grade","cells", "flask", "phase", "scale", "avian", "paper", "balls", "brain", "chest", "doubt", "earth", "field", "heart", "noise", "plant", "sheep", "green", "snark", "shark", "vocab", "steam", "table", "write", "grant", "color", "shell", "cause", "semen", "fluid", "moist", "chaos", "pluto", "ethic", "email", "masks"]
 while loop:
     print(Back.WHITE + Fore.BLACK + "Start a new game? (yes/nah)" + Style.RESET_ALL)
     command = input()
