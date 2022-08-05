@@ -1,8 +1,11 @@
-# middle-school-code
-Projects I am making while in the classroom. I am using this as an excuse not to work on my EdTPA.
+# school-code
+Projects I am making while in the classroom. Some projects I work on when bored listening to the SRCS Cabinet lecturing me...
 
 # MS Teacher's Wordle
-Warning, may include innapropriate words we are used to hearing kids shout out and/or discuss in class.
+Wordle based on word list used by students in the science classroom.
 
 # Mental Math
-Mental Math prompting grounding tool for when you lose your mind teaching. Great way to ground yourself and take a moment to refocus!
+Mental math game, working on making it but struggling with implementing the randomizer choice of which type of math problem.
+
+# Reddit Plagarism Checker
+Checks reddit posts for percent matching of similar content.
